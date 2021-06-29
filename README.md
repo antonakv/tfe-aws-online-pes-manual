@@ -248,6 +248,16 @@ This manual is dedicated for Terraform Enterprise online interactive installatio
 
 - Click `Save`
 
+- Open `EC2 - Instances`
+
+- Select your EC2 instance
+
+- Right click on the instance - Security - Modify IAM role
+
+- Select `aakulov-iam-role-tfe-s3`
+
+- Click `Save`
+
 ### Create Route 53 domain record for TFE installation
 
 - Open AWS console
@@ -516,5 +526,15 @@ To continue the installation, visit the following URL in your browser:
 
 - Put `sslmode=disable` to `optional extra parameters`
 
+ - In `Object storage` select `S3`
 
- 
+ - Check box `Use Instance Profile for Access`
+
+ - Put `eu-central-1` to `Region` field
+
+ - Click `Test authentication`
+
+ - Scroll down till the end of the page
+
+ - Click `Save`
+
